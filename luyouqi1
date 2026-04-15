@@ -1,0 +1,86 @@
+[custom]
+;不要随意改变关键字，否则会导致出错
+;acl4SSR规则
+
+
+;设置规则标志位
+ruleset=Ⓜ️ 联通服务,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/liantonwifi.list
+ruleset=Ⓜ️ 移动服务,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/yidongwifi1.list
+ruleset=Ⓜ️ 土耳其服务1,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/tuerqiwifi1.list
+ruleset=Ⓜ️ 土耳其服务2,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/tuerqiwifi2.list
+ruleset=Ⓜ️ 南非服务1,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/nanfeiwifi1.list
+ruleset=Ⓜ️ 南非服务2,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/nanfeiwifi2.list
+ruleset=Ⓜ️ 巴基斯坦服务01,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/bajisitan01.list
+ruleset=Ⓜ️ 巴基斯坦服务02,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/bajisitan02.list
+ruleset=Ⓜ️ 巴基斯坦服务03,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/bajisitan03.list
+ruleset=Ⓜ️ 巴基斯坦服务04,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/bajisitan04.list
+ruleset=Ⓜ️ 巴基斯坦服务05,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/bajisitan05.list
+ruleset=Ⓜ️ 巴基斯坦服务06,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/bajisitan06.list
+ruleset=Ⓜ️ 巴基斯坦服务07,https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/bajisitan07.list
+ruleset=🐟 漏网之鱼,[]FINAL
+
+
+
+
+
+
+
+;WIFI位置
+custom_proxy_group=Ⓜ️ 移动服务`select`[]移动
+custom_proxy_group=Ⓜ️ 联通服务`select`[]联通
+custom_proxy_group=Ⓜ️ 土耳其服务1`select`[]土耳其fallback01
+custom_proxy_group=Ⓜ️ 土耳其服务2`select`[]土耳其fallback02
+custom_proxy_group=Ⓜ️ 南非服务1`select`[]南非fallback01
+custom_proxy_group=Ⓜ️ 南非服务2`select`[]南非fallback02
+custom_proxy_group=Ⓜ️ 巴基斯坦服务01`select`[]巴基斯坦fallback01
+custom_proxy_group=Ⓜ️ 巴基斯坦服务02`select`[]巴基斯坦fallback02
+custom_proxy_group=Ⓜ️ 巴基斯坦服务03`select`[]巴基斯坦fallback03
+custom_proxy_group=Ⓜ️ 巴基斯坦服务04`select`[]巴基斯坦fallback04
+custom_proxy_group=Ⓜ️ 巴基斯坦服务05`select`[]巴基斯坦fallback05
+custom_proxy_group=Ⓜ️ 巴基斯坦服务06`select`[]巴基斯坦fallback06
+custom_proxy_group=Ⓜ️ 巴基斯坦服务07`select`[]巴基斯坦fallback07
+custom_proxy_group=🐟 漏网之鱼`select`.*[]DIRECT
+
+
+
+
+;节点选择位置
+
+
+custom_proxy_group=联通`fallback`(联通)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=移动`fallback`(移动)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=土耳其fallback01`fallback`(土耳其01|土耳其02|土耳其03|土耳其05|土耳其06)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=土耳其fallback02`fallback`(土耳其03|土耳其04|土耳其05|土耳其07)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=南非fallback01`fallback`(南非01|南非02|南非03)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=南非fallback02`fallback`(南非02|南非03)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=巴基斯坦fallback01`fallback`(clash巴基斯坦01|备用巴基斯坦01)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=巴基斯坦fallback02`fallback`(clash巴基斯坦02|备用巴基斯坦02)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=巴基斯坦fallback03`fallback`(clash巴基斯坦03|备用巴基斯坦03)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=巴基斯坦fallback04`fallback`(clash巴基斯坦04|备用巴基斯坦04)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=巴基斯坦fallback05`fallback`(clash巴基斯坦05|备用巴基斯坦05)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=巴基斯坦fallback06`fallback`(clash巴基斯坦06|备用巴基斯坦06)`http://www.gstatic.com/generate_204`300,,50
+custom_proxy_group=巴基斯坦fallback07`fallback`(clash巴基斯坦07|备用巴基斯坦07)`http://www.gstatic.com/generate_204`300,,50
+
+
+
+
+;设置分组标志位
+
+enable_rule_generator=true
+overwrite_original_rules=true
+clash_rule_base=https://raw.githubusercontent.com/daosheng1991/peizhi/refs/heads/main/clash-rule-tongyong.yaml
+
+
+
+;luck
+;节点名称对应机场
+;土耳其01=sakura 土耳其-IEPL 01
+;土耳其02=sakura 土耳其-IEPL 02
+;土耳其03=sakura 土耳其-IEPL 03
+;土耳其04=sakura 土耳其-IEPL 04
+;土耳其05=宝可梦 土耳其-原生【3x】
+;土耳其06=XXAI Türkiye 01
+;土耳其07=奈云 土耳其C01|IDC
+;南非01=宝可梦 南非约翰内斯堡【6x】
+;南非02=XXAI South Africa 01
+;南非03=奈云 南非C01|IDC
